@@ -1,7 +1,6 @@
 package com.java.util;
 
-import java.sql.SQLOutput;
-import java.util.ArrayList;
+
 import java.util.Random;
 
 public class Test {
