@@ -157,15 +157,5 @@ public class DateAndTime {
             ex.printStackTrace();
 
         }
-
-
-
-
-
-
-
-
-
     }
-
 }
