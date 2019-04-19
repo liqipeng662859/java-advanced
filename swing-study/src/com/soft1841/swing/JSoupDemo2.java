@@ -19,14 +19,13 @@ public class JSoupDemo2 {
         File file;
         InputStream in;
         OutputStream out;
-        String url = "http://expo.bootcss.com/";
+        String url = "https://www.enterdesk.com/special/jiuzhaigou/";
         Connection connection = Jsoup.connect(url);
         Document document = connection.get();
-        Element elementDiv = document.getElementById("post-list");
-        Elements elements = elementDiv.getElementsByClass("col-xs-12");
+        Elements elements = document.getElementsByClass("w1200_24");
         System.out.println(elements.size());
         for (Element e:elements){
-            Element imgElement = e.child(0).child(1).child(0).child(0);
+            Element imgElement = e.child(0).child(0).child(0).child(0);
             UUID uuid = UUID.randomUUID();
             String imgName = uuid + ".jpg";
             file = new File("D:\\img\\" + imgName);
